@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, inicial-scale = 1, shrink-to-fit=no">
+	<title>Listagem em Grupo</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		.row{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container mb-10"> 
+	<div class="row">
+		<div class="col-4">
+			<ul class="list-group">
+				<li class="list-group-item">Scary Spice</li>
+				<li class="list-group-item active">Baby Spice</li>
+				<li class="list-group-item disabled">Ginger Spice</li>
+				<li class="list-group-item">Posh Spice</li>
+				<li class="list-group-item">Sporty Spice</li>
+			</ul>
+		</div>
+
+		<div class="col-4">
+			<div class="list-group">
+				<a href="#"  class="list-group-item active">Scary Spice</a>
+				<a href="#"  class="list-group-item list-group-item-action">Baby Spice</a>
+				<a href="#"  class="list-group-item list-group-item-action">Ginger Spice</a>
+				<a href="#"  class="list-group-item disabled">Posh Spice</a>
+				<a href="#"  class="list-group-item list-group-item-action">Sporty Spice</a>
+			</div>
+		</div>
+
+		<div class="col-4">
+			<div class="list-group">
+				<button type="button" class="list-group-item list-group-item-action active">Scary Spice</buttom>
+				<button type="button" class="list-group-item list-group-item-action">Baby Spice</buttom>
+				<button type="button" class="list-group-item list-group-item-action">Ginger Spice</buttom>
+				<button type="button" class="list-group-item list-group-item-action" disabled>Posh Spice</buttom>
+				<button type="button" class="list-group-item list-group-item-action">Sporty Spice</buttom>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-4">
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-primary">Scary Spice</li>
+				<li class="list-group-item list-group-item-secondary">Baby Spice</li>
+				<li class="list-group-item list-group-item-success">Ginger Spice</li>
+				<li class="list-group-item list-group-item-danger">Posh Spice</li>
+				<li class="list-group-item list-group-item-warning">Sporty Spice</li>
+			</ul>
+		</div>
+
+		<div class="col-4">
+			<div class="list-group">
+				<a href="#"  class="list-group-item list-group-item-primary">Emma Bunton</a>
+				<a href="#"  class="list-group-item list-group-item-action list-group-item-secondary">Melanie B</a>
+				<a href="#"  class="list-group-item list-group-item-action list-group-item-success">Geri Halliwell</a>
+				<a href="#"  class="list-group-item disabled list-group-item-action list-group-item-danger">Victoria Beckham</a>
+				<a href="#"  class="list-group-item list-group-item-action list-group-item-warning">Melanie C</a>
+			</div>
+		</div>
+
+		<div class="col-4">
+			<div class="list-group">
+				<button type="button" class="list-group-item list-group-item-primary list-group-item-action">Scary</buttom>
+				<button type="button" class="list-group-item list-group-item-action list-group-item-secondary">Baby</buttom>
+				<button type="button" class="list-group-item list-group-item-action list-group-item-success">Ginger</buttom>
+				<button type="button" class="list-group-item list-group-item-action list-group-item-danger">Posh</buttom>
+				<button type="button" class="list-group-item list-group-item-action list-group-item-warning">Sporty</buttom>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-4">
+			<div class="list-group">
+				<a href="#" class="list-group-item list-group-item-action active">
+					<div class="d-flex w-100 justify-content-between">
+						<h5>Título da minha lista</h5>
+						<small>3 dias atrás</small>
+					</div>
+						<p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+					<div class="d-flex w-100 justify-content-between">
+						<h5>Título da minha lista</h5>
+						<small>3 dias atrás</small>
+					</div>
+						<p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+				</a>
+				<a href="#" class="list-group-item list-group-item-action">
+					<div class="d-flex w-100 justify-content-between">
+						<h5>Título da minha lista</h5>
+						<small>3 dias atrás</small>
+					</div>
+						<p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3">
+				<div class="list-group" id="list-tab" role="tablist">
+				<a href="#list-scary" class="list-group-item list-group-item-action active" id="list-scary-list" data-toggle="list" role="tab" aria-control="scary">Scary</a>
+				<a href="#list-baby" class="list-group-item list-group-item-action" id="list-baby-list" data-toggle="list" role="tab" aria-control="baby">Baby</a>
+				<a href="#list-ginger" class="list-group-item list-group-item-action" id="list-ginger-list" data-toggle="list" role="tab" aria-control="ginger">Ginger</a>
+				<a href="#list-posh" class="list-group-item list-group-item-action" id="list-posh-list" data-toggle="list" role="tab" aria-control="posh">Posh</a>
+				<a href="#list-sporty" class="list-group-item list-group-item-action" id="list-sporty-list" data-toggle="list" role="tab" aria-control="sporty">Sporty</a>
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="tab-content" id="nav-tabContent">
+					<div id="list-scary" class="tab-pane fade show active" role="tabpanel" aria-labelledby="list-scary-list">
+						<h3>Scary</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div id="list-baby" class="tab-pane fade" role="tabpanel" aria-labelledby="list-baby-list">
+						<h3>Baby</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div id="list-ginger" class="tab-pane fade" role="tabpanel" aria-labelledby="list-ginger-list">
+						<h3>Ginger</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div id="list-posh" class="tab-pane fade" role="tabpanel" aria-labelledby="list-posh-list">
+						<h3>Posh</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div id="list-sporty" class="tab-pane fade" role="tabpanel" aria-labelledby="list-sporty-list">
+						<h3>Sporty</h3>
+						<form>
+							<div class="form-group">
+								<label for="nome">Nome</label>
+								<input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome: ">
+							</div>
+							<div class="form-group">
+								<label for="assunto">Assunto</label>
+								<input type="text" class="form-control" name="assunto" id="assunto" placeholder="Assunto: ">
+							</div>
+							<div class="form-group">
+								<label for="conteudo">Conteúdo</label>
+								<textarea class="form-control" id="conteudo" name="conteudo"></textarea>
+							</div>
+							<button class="btn btn-primary">Enviar</button>
+						</form>
+					</div>
+				</div>
+			</div>
+	</div>
+
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('[data-toggle="popover"]').popover()
+	})
+</script>
+
+</body>
+</html>
